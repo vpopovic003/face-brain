@@ -108,6 +108,18 @@ class App extends Component {
       .then(result => this.displayFaceBox(this.calculateFaceLocation(result)))
       .catch(error => console.log('error', error));
     
+      // should check if response from clarifai is true, but had to do like this for now
+    fetch('http://localhost:3000/image', {
+      method: 'put',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        id: this.state.user.id
+      })
+    })
+    .then(response => response.json())
+    .then(count => {
+      this.setState(Object.assign(this.state.user, { entries: count}))
+    })
   }
 
   onRouteChange = (route) => {
