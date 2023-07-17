@@ -94,7 +94,7 @@ class App extends Component {
           <div>
             <Navigation />
             <Logo />
-            <Rank />
+            {/* <Rank /> */}
             <ImageLinkForm 
               onInputChange={this.onInputChange} 
               onSubmit={this.onSubmit}/>
