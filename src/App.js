@@ -137,7 +137,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParticlesBg type="circle" bg={true} />
+        {/* <ParticlesBg type="circle" bg={true} /> */}
         <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>           
         { this.state.route === 'home'
           ? 
