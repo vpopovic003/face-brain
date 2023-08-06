@@ -110,7 +110,7 @@ class App extends Component {
       .then(result => this.displayFaceBox(this.calculateFaceLocation(result)))
       .catch(error => console.log('error', error));
     
-      // should check if response from clarifai is true, but had to do like this for now
+      // Should check if response from clarifai is true, but had to do like this for now
     fetch('https://face-brain-api-edb2.onrender.com/image', {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
