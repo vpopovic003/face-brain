@@ -70,8 +70,11 @@ class App extends Component {
     this.state = initialState;
   }
 
+  componentDidMount() {
+    document.title = 'Face Brain';
+  }
+
   // Connecting to back end (node/express)
- 
   loadUser = (data) => {
     this.setState({user: {
       id: data.id,
