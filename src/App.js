@@ -111,7 +111,7 @@ class App extends Component {
       .catch(error => console.log('error', error));
     
       // Should check if response from clarifai is true, but had to do like this for now
-    fetch('https://face-brain-api-edb2.onrender.com/image', {
+    fetch('https://face-brain-api-2tp3.onrender.com/image', {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

@@ -23,7 +23,7 @@ class Register extends React.Component {
   }
 
   onSubmit = () => {
-    fetch('https://face-brain-api-edb2.onrender.com/register', {
+    fetch('https://face-brain-api-2tp3.onrender.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
